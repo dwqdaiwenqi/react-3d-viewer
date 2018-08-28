@@ -6,7 +6,7 @@ A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenq
 * 数据驱动方式改变状态
 * 支持DirectionLigitn、AmbientLight组件- 未来支持更多
 ---
-##使用
+## 使用
 通过npm或者cdn获取
 ```js
 npm i react-3d-model
