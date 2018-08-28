@@ -5,6 +5,15 @@
 li{
   list-style: none;
 }
+body,html{
+  width:100%;
+  // overflow: hidden;
+  box-sizing: border-box;
+  // border:1px solid darkcyan;
+}
+main{
+  width:100%;
+}
 .example{
   @co1:#0ec5c5;
   &__title{
@@ -13,14 +22,25 @@ li{
     color: @co1;
     text-align: center;
   }
-
+  &__nav-holder{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
   &__nav{
-   
+    // width:50%;
+    // min-width:320px;
 
-    overflow: hidden;
+    //overflow: hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     li{
-      float:left;
+      //float:left;
       padding:5px 10px;
       // padding:3%;
       

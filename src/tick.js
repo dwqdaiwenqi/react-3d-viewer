@@ -10,7 +10,7 @@ export default function Tick(fuc,name){
     els.forEach(o=>{
       var {fuc,animate} = o
       if(animate){
-        fuc.call(o)
+        fuc.call(o,Date.now())
       }
       
     })

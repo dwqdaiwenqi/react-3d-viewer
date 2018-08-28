@@ -1,15 +1,20 @@
 ```js
+import {OBJModel} from 'react-3d-model'
+
 render(){
   return(
     <div>
-      <ObjModel 
-          width="300" height="300"  
-          position={{x:0,y:-100,z:0}} 
-          src={'//192.168.75.25:7878/18-spring/react-3dmodel-viewer/src/freedom.obj'}
-          onProgress={(xhr)=>{
-            console.log('obj',xhr)
-          }}
-        />
+      <OBJModel 
+        width="400" height="400"  
+        position={{x:0,y:-100,z:0}} 
+        src="./src/lib/model/freedom.obj"
+        onLoad={()=>{
+          //...
+        }}
+        onProgress={xhr=>{
+          //...
+        }}
+      />
     </div>
   )
 }

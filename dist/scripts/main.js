@@ -332,7 +332,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = Tick;\nfunction Tick(fuc, name) {\n  var Renderer = { animate: true, name: '' };\n\n  var els = [Object.assign(Object.create(Renderer), { fuc: fuc, name: name })];\n  var animate = function animate() {\n    requestAnimationFrame(animate);\n    els.forEach(function (o) {\n      var fuc = o.fuc,\n          animate = o.animate;\n\n      if (animate) {\n        fuc.call(o);\n      }\n    });\n  };\n  animate();\n  //debugger\n  exports.default = Tick = function Tick(fuc, name) {\n    //debugger\n    var o = Object.assign(Object.create(Renderer), { fuc: fuc, name: name });\n    els.push(o);\n    return o;\n  };\n\n  return els[0];\n}\n\n//# sourceURL=webpack://React3DModel/./src/tick.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = Tick;\nfunction Tick(fuc, name) {\n  var Renderer = { animate: true, name: '' };\n\n  var els = [Object.assign(Object.create(Renderer), { fuc: fuc, name: name })];\n  var animate = function animate() {\n    requestAnimationFrame(animate);\n    els.forEach(function (o) {\n      var fuc = o.fuc,\n          animate = o.animate;\n\n      if (animate) {\n        fuc.call(o, Date.now());\n      }\n    });\n  };\n  animate();\n  //debugger\n  exports.default = Tick = function Tick(fuc, name) {\n    //debugger\n    var o = Object.assign(Object.create(Renderer), { fuc: fuc, name: name });\n    els.push(o);\n    return o;\n  };\n\n  return els[0];\n}\n\n//# sourceURL=webpack://React3DModel/./src/tick.js?");
 
 /***/ })
 

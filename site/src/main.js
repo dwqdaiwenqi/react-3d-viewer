@@ -19,19 +19,23 @@ class App extends React.Component{
     }
   }
   render(){
+   //  debugger
     return(
       <section className="example">
         <header className="example__title">
           React 3DModel 
         </header>
         <div className="">
-          <ul className="example__nav">
-            <li><Link to="/JSON">JSON</Link></li>
-            <li><Link to="/OBJ">OBJ</Link></li>
-            <li><Link to="/MTL">MTL</Link></li>
-            <li><Link to="/GLTF">GLTF</Link></li>
-            <li><Link to="/DAE">DAE</Link></li>
-          </ul>
+          <div className="example__nav-holder">
+            <ul className="example__nav">
+              <li><Link to="/JSON">JSON</Link></li>
+              <li><Link to="/OBJ">OBJ</Link></li>
+              <li><Link to="/MTL">MTL</Link></li>
+              <li><Link to="/GLTF">GLTF</Link></li>
+              <li><Link to="/DAE">DAE</Link></li>
+            </ul>
+          </div>
+         
       
           <div className="example__container" style={{position:'relative'}}>
             {

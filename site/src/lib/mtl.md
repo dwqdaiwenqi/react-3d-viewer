@@ -1,18 +1,16 @@
 ```js
-import Tick from './tick'
+import {Tick,MTLModel} from 'react-3d-model'
 
 render(){
   return(
     <div>
-     <ObjMtlModel 
-      enableZoom = {false}
-      position={{x:0,y:-100,z:0}}
-      rotation={this.state.rotation}
-      mtl={'//192.168.75.25:7878/18-spring/react-3dmodel-viewer/src/freedom.mtl'}
-      src={'//192.168.75.25:7878/18-spring/react-3dmodel-viewer/src/freedom.obj'}
-      onProgress={(xhr)=>{
-        console.log('objmtl',xhr)
-      }}
+     <MTLModel 
+        enableZoom = {false}
+        position={{x:0,y:-100,z:0}}
+        rotation={this.state.rotation}
+        mtl="./src/lib/model/freedom.mtl"
+        src="./src/lib/model/freedom.obj"
+      />
     />
     </div>
   )

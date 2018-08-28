@@ -1,8 +1,10 @@
 ```js
+import {JSONModel} from 'react-3d-model'
+
 render(){
   return(
     <div>
-      <JsonModel src="//192.168.75.25:7878/models/kapool.js" />
+      <JSONModel src="./src/lib/model/kapool.js" />
     </div>
   )
 }

@@ -1,9 +1,24 @@
 ```js
+import {DAEModel} from 'react-3d-model'
+
 render(){
   return(
     <div>
-      <ColladaModel src={'//192.168.75.25:7878/18-spring/react-3dmodel-viewer/Ruins_dae.dae'}/>
+      <DAEModel src="./src/lib/model/Ruins_dae.dae">
+        <DirectionLight position={this.state.light_position}/>
+      </DAEModel>
     </div>
   )
+}
+componentWillUnmount(){
+  this.tick.animate = false
+}
+componentDidMount(){
+  this.tick = Tick(t=>{
+    var {light_position} = this.state
+    light_position.z += Math.sin(t*0.0008)
+    this.setState({light_position})
+
+  })
 }
 ```

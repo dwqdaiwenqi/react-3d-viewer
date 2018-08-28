@@ -193,6 +193,7 @@ export class DAE extends Component{
     super(props)
     this.state = {
       md: marked(require('./lib/dae.md'))
+      ,light_position:{x:30,y:30,z:30}
     }
   }
   render(){
@@ -205,7 +206,9 @@ export class DAE extends Component{
             onLoad={()=>{
               this.props.onLoaded()
             }}
-          />
+          >
+            <DirectionLight position={this.state.light_position}/>
+          </DAEModel>
         </div>
         <div ref="markdown" dangerouslySetInnerHTML = {{__html: __html}}></div>
       </section>
@@ -217,5 +220,17 @@ export class DAE extends Component{
   }
   componentWillMount(){
     this.props.onWillMount()
+  }
+  componentWillUnmount(){
+    
+    this.tick.animate = false
+  }
+  componentDidMount(){
+    this.tick = Tick(t=>{
+      var {light_position} = this.state
+      light_position.z += Math.sin(t*0.0008)
+      this.setState({light_position})
+
+    })
   }
 }

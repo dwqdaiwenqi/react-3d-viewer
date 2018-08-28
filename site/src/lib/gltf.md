@@ -1,9 +1,11 @@
 ```js
+import {GLTFModel,AmbientLight,DirectionLight} from 'react-3d-model'
+
 render(){
   return(
     <div>
-      <GltfModel
-        src={'//192.168.75.25:7878/18-spring/react-3dmodel-viewer/src/DamagedHelmet.gltf'}
+      <GLTFModel
+        src="./src/lib/model/DamagedHelmet.gltf"
       >
         <AmbientLight color={0xffffff}/>
         <DirectionLight color={0xffffff} position={{x:100,y:200,z:100}}/>
