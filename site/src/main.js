@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {render} from 'react-dom';
 
-import{Router,Route,Link,withRouter,hashHistory } from 'react-router';
+import{Router,Route,Link,withRouter,hashHistory,IndexRoute } from 'react-router';
 
 import {JSON_,OBJ,MTL,GLTF,DAE} from './show_models'
 
@@ -28,11 +28,11 @@ class App extends React.Component{
         <div className="">
           <div className="example__nav-holder">
             <ul className="example__nav">
-              <li><Link to="/JSON">JSON</Link></li>
-              <li><Link to="/OBJ">OBJ</Link></li>
-              <li><Link to="/MTL">MTL</Link></li>
-              <li><Link to="/GLTF">GLTF</Link></li>
-              <li><Link to="/DAE">DAE</Link></li>
+              <li><Link activeClassName="active-link" to="/JSON">JSON</Link></li>
+              <li><Link activeClassName="active-link" to="/OBJ">OBJ</Link></li>
+              <li><Link activeClassName="active-link" to="/MTL">MTL</Link></li>
+              <li><Link activeClassName="active-link" to="/GLTF">GLTF</Link></li>
+              <li><Link activeClassName="active-link" to="/DAE">DAE</Link></li>
             </ul>
           </div>
          
@@ -83,11 +83,13 @@ class App extends React.Component{
 render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
+      <IndexRoute component={JSON_} />
       <Route path="/JSON" component={JSON_}/>
       <Route path="/OBJ" component={OBJ}/>
       <Route path="/MTL" component={MTL}/>
       <Route path="/GLTF" component={GLTF}/>
       <Route path="/DAE" component={DAE}/>
+      
     </Route>  
   </Router>
   ,document.querySelector('#app')

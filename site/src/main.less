@@ -11,21 +11,30 @@ body,html{
   box-sizing: border-box;
   // border:1px solid darkcyan;
 }
+a{
+  color:black;
+}
 main{
   width:100%;
 }
 .example{
+
   @co1:#0ec5c5;
   &__title{
     font: 50px "Microsoft Yahei";
     font-weight: 500;
     color: @co1;
     text-align: center;
+    margin:3% 0;
+  }
+  &__container{
+    //margin-top:3%;
   }
   &__nav-holder{
     // display: flex;
     // justify-content: center;
     // align-items: center;
+    margin:3% 0;
   }
   &__nav{
     // width:50%;
@@ -41,18 +50,24 @@ main{
     align-items: center;
     li{
       //float:left;
-      padding:5px 10px;
+      // padding:5px 10px;
       // padding:3%;
       
-      color:black;
-      a{text-decoration: none;font-size:25px;}
+
+      
+      a{
+        text-decoration: none;
+        //color:black;
+        font-size:25px;
+        padding:5px 5px;
+      }
       margin:15px 0 0 15px;
 
       //&:active{
-        background:@co1;
-        a{
-          color:#fff;
-        }
+        // background:@co1;
+        // a{
+        //   color:#fff;
+        // }
       //}
 
     }
@@ -70,6 +85,11 @@ main{
   100% {transform: rotate(360deg);}
 }
 
+.active-link{
+  background:#0ec5c5;
+  color:#fff;
+  padding:5px 10px;
+}
 .load-wrapp {
   // float: left;
   width: 100px;
@@ -79,7 +99,7 @@ main{
   border-radius: 5px;
   text-align: center;
   // background-color: #d8d8d8;
-  margin:-20% 0 0 0;
+  margin:-40% 0 0 0;
 }
 
 .load-wrapp p {padding: 0 0 20px;}

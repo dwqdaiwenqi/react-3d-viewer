@@ -58,8 +58,6 @@ export class JSON_ extends Component{
 export class OBJ extends Component{
   render(){
     var __html = marked(require('./lib/obj.md'));
-    //console.log(__html);
-    //__html = marked('### OBJ ```js var a = 123;```')
     return(
       <section>
         {/* <header>obj!</header> */}
@@ -228,7 +226,7 @@ export class DAE extends Component{
   componentDidMount(){
     this.tick = Tick(t=>{
       var {light_position} = this.state
-      light_position.z += Math.sin(t*0.0008)
+      light_position.z += Math.sin(t*0.001)
       this.setState({light_position})
 
     })
