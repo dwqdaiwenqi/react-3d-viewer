@@ -54,7 +54,6 @@ class App extends React.Component{
                 ,fontSize: '20px'
                 ,display:'-webkit-box'
                 ,WebkitBoxPack:'center'
-                ,WebkitBoxAlign:'center'
                 ,margin:'0% 0 0 0'
               }}>
                 <div className="load-wrapp">              
