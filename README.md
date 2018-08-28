@@ -56,6 +56,8 @@ componentDidMount(){
 }
 ```
 更多使用方式参考 http://dwqdaiwenqi.github.io/react-3d-model/site/
+---
+
 ## 怎么运行的
 model-element脚本创建相机，场景，光源和WebGL渲染器。渲染器返回的DOM节点（<canvas>元素）将添加到文档中，并配置为填充视口并位于所有其他内容之上。此外，pointer-events: none设置，允许下面的元素进行交互。
 
