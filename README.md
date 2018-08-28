@@ -16,6 +16,14 @@ npm i react-3d-model
 基本使用
 ```js
 import {OBJModel} from 'react-3d-model'
+
+render(){
+  return(
+    <div>
+      <OBJModel src="./a.obj"/>
+    </div>
+  )
+}
 ```
 
 
