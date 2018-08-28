@@ -24,18 +24,21 @@ export class JSON_ extends Component{
     this.state = {
       src: '',
       rotation:{x:0,y:0,z:0},
-      md: marked(require('./lib/json.md'))
+      md: marked(require('./lib/json.md')),
+      width: window.innerWidth*1
     }
   }
   render(){
     var __html = this.state.md
-
+    var {width} = this.state
+    if(width>600) width = 600;
     return(
       <section>
         {/* <header>json!</header> */}
         <div className="model-container">
           <JSONModel
             src="./src/lib/model/kapool.js"
+            width={width} height={width}
             onLoad={()=>{
               this.props.onLoaded()
             }}
@@ -94,13 +97,15 @@ export class MTL extends Component{
     this.state = {
       src: '',
       rotation:{x:0,y:0,z:0},
-      md: marked(require('./lib/mtl.md'))
+      md: marked(require('./lib/mtl.md')),
+      width: window.innerWidth*1
     }
   }
   render(){
     var __html = this.state.md
     //console.log(__html);
-
+    var {width} = this.state
+    if(width>600) width = 600;
     return(
       <section>
         {/* <header>mtl</header> */}
@@ -109,6 +114,7 @@ export class MTL extends Component{
             enableZoom = {false}
             position={{x:0,y:-100,z:0}}
             rotation={this.state.rotation}
+            width={width} height={width}
             mtl="./src/lib/model/freedom.mtl"
             src="./src/lib/model/freedom.obj"
             onProgress={(xhr)=>{
@@ -153,16 +159,21 @@ export class GLTF extends Component{
     this.state = {
       src: '',
       rotation:{x:0,y:0,z:0},
-      md: marked(require('./lib/gltf.md'))
+      md: marked(require('./lib/gltf.md')),
+      width: window.innerWidth*1
     }
   }
   render(){
     var __html = this.state.md
+    var {width} = this.state
+    if(width>600) width = 600;
+    
     return(
       <section>
         <div className="model-container">
           <GLTFModel
             src="./src/lib/model/DamagedHelmet.gltf"
+            width={width} height={width}
             onLoad={()=>{
               this.props.onLoaded()
             }}
@@ -192,15 +203,19 @@ export class DAE extends Component{
     this.state = {
       md: marked(require('./lib/dae.md'))
       ,light_position:{x:30,y:30,z:30}
+      , width: innerWidth*1
     }
   }
   render(){
     var __html = this.state.md;
+    var {width} = this.state
+    if(width>600) width = 600;
     return(
       <section>
         <div className="model-container">
           <DAEModel 
             src={'./src/lib/model/Ruins_dae.dae'}
+            width={width} height={width}
             onLoad={()=>{
               this.props.onLoaded()
             }}
