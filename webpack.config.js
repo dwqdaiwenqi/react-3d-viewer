@@ -12,7 +12,7 @@ module.exports = {
         { path: __dirname+'/dist/',filename: 'scripts/[name].js',library: 'React3DModel',libraryTarget: 'umd' },
     module: {
         rules: [
-            {
+            {    
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
