@@ -11,7 +11,7 @@ A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenq
 ```js
 npm i react-3d-model
 ```
-* [https://unpkg.com/react-3d-model@latest/dist/main.js](a)
+* [https://unpkg.com/react-3d-model@latest/dist/main.js](https://unpkg.com/react-3d-model@latest/dist/main.js)
 
 基本使用
 ```js
