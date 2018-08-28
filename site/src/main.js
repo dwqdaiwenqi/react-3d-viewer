@@ -23,7 +23,7 @@ class App extends React.Component{
     return(
       <section className="example">
         <header className="example__title">
-          React 3DModel 
+          <a href="https://github.com/dwqdaiwenqi/react-3d-model">React 3DModel </a>
         </header>
         <div className="">
           <div className="example__nav-holder">
