@@ -71,7 +71,7 @@ class App extends React.Component{
   }
   onLoaded(){
     //setTimeout(()=>{
-    //this.setState({showModel: true})
+    this.setState({showModel: true})
     //},566)
   }
 }
