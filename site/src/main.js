@@ -46,12 +46,12 @@ class App extends React.Component{
                 position:'absolute'
                 ,left:'0',top:'0'
                 ,width:'100%',height:'100%'
-                // ,background:'rgba(255,255,255,1)'
+                ,background:'rgba(255,255,255,1)'
                 ,fontSize: '20px'
                 ,display:'-webkit-box'
                 ,WebkitBoxPack:'center'
                 ,WebkitBoxAlign:'center'
-                ,margin:'-20% 0 0 0'
+                ,margin:'0% 0 0 0'
               }}>
                 <div className="load-wrapp">              
                   <div className="load-4">
@@ -71,7 +71,7 @@ class App extends React.Component{
   }
   onLoaded(){
     //setTimeout(()=>{
-    this.setState({showModel: true})
+    //this.setState({showModel: true})
     //},566)
   }
 }
