@@ -1,0 +1,79 @@
+* {
+  margin:0;
+  padding:0;
+}
+li{
+  list-style: none;
+}
+.example{
+  @co1:#0ec5c5;
+  &__title{
+    font: 50px "Microsoft Yahei";
+    font-weight: 500;
+    color: @co1;
+    text-align: center;
+  }
+
+  &__nav{
+   
+
+    overflow: hidden;
+
+    li{
+      float:left;
+      padding:5px 10px;
+      // padding:3%;
+      
+      color:black;
+      a{text-decoration: none;font-size:25px;}
+      margin:15px 0 0 15px;
+
+      //&:active{
+        background:@co1;
+        a{
+          color:#fff;
+        }
+      //}
+
+    }
+  }
+}
+
+@-webkit-keyframes loadingD {
+  0% {-webkit-transform : rotate(0deg);}
+  50% {-webkit-transform : rotate(180deg);}
+  100% {-webkit-transform : rotate(360deg);}
+}
+@keyframes loadingD {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.load-wrapp {
+  // float: left;
+  width: 100px;
+  height: 100px;
+  // margin: 0 10px 10px 0;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  // background-color: #d8d8d8;
+}
+
+.load-wrapp p {padding: 0 0 20px;}
+.load-wrapp:last-child {margin-right: 0;}
+.ring-1 {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  // border: 7px dashed #4b9cdb;
+  border:7px dashed #0ec5c5;
+  border-radius: 100%;
+}
+
+.load-4 .ring-1 {
+  animation: loadingD 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite;
+  -webkit-animation: loadingD 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite;
+}
