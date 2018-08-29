@@ -56,6 +56,27 @@ componentDidMount(){
 }
 ```
 [Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/) is here. 
+// width:500 number
+// ,height:500
+// ,antialias:true boolen
+// ,position: {x:0, y: 0, z: 0} object
+// ,rotation: {x:0, y: 0, z: 0}
+// ,enableKeys: true
+// ,enableRotate: true
+// ,enableZoom: true
+// ,enabled: true
+// ,src string
+// ,mtl string
+
+## Properties
+Property        |       Type            |       Default         |       Description
+:-----------------------|:--------------|:--------------|:--------------------------------
+width | number  | 500  | width of container
+height | number  | 500  | width of container
+onClick | function  | undefined  | optional; do something when the user clicks a photo; receives arguments event and an object containing the index, photo obj originally sent and the next and previous photos in the gallery if they exist
+margin | number  | 2  | optional; number of margin pixels around each entire image
+direction | string | 'row' | optional; `column` or `row` based layout
+
 
 ## How it works
 The `<FormatModel>` creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a `<canvas>` element) is added to the document and configured to fill the viewport.

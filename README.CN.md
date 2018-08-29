@@ -57,8 +57,6 @@ componentDidMount(){
 ```
 [Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/) 在这儿. 
 
-## 怎么运作的
-`<FormatModel/>`创建了相机、场景、灯光和WebGL渲染器。DOM返回了一个（`<canvas/>`元素），它添加到了文档中并且填满了可视区
 ## License
 
 MIT
