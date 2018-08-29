@@ -447,24 +447,3 @@ class Model extends React.Component{
 }
 
 export default Model
-
-// export default class Model extends React.Component{
-//   render(){
-//     //     return (
-// //       <div  ref="container" data-loader={this.props.loader} 
-// //         style={this.style()}
-// //       >
-// //         {
-          
-// //         }
-// //       </div>
-
-// //     )
-//     return(
-//       // ref={(node) => this.menuList = node}
-//       <section ref={node=>this.$container=node}>
-//         model..
-//       </section>
-//     )
-//   }
-// }

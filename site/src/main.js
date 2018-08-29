@@ -23,7 +23,7 @@ class App extends React.Component{
     return(
       <section className="example">
         <header className="example__title">
-          <a href="https://github.com/dwqdaiwenqi/react-3d-model">React 3DModel </a>
+          <a href="https://github.com/dwqdaiwenqi/react-3d-model/blob/master/README.md">React 3DModel </a>
         </header>
         <div className="">
           <div className="example__nav-holder">
@@ -88,7 +88,6 @@ render(
       <Route path="/MTL" component={MTL}/>
       <Route path="/GLTF" component={GLTF}/>
       <Route path="/DAE" component={DAE}/>
-      
     </Route>  
   </Router>
   ,document.querySelector('#app')

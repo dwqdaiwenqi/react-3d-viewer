@@ -24,11 +24,6 @@ module.exports = {
             {
 							test: /\.(css|less)$/,
 							use: [
-							//  'style-loader',
-							//  'css-loader',
-							//  //'postcss-loader',
-							//  'less-loader'
-
 
 							'style-loader',
 							'css-loader',
@@ -61,7 +56,6 @@ module.exports = {
         ]
     },
     plugins: [
-        // new ExtractTextPlugin('css/[name].css')
     ]
 
 }
