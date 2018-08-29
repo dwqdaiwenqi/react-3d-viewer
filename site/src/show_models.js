@@ -31,7 +31,7 @@ export class JSON_ extends Component{
   render(){
     var __html = this.state.md
     var {width} = this.state
-    if(width>600) width = 600;
+    if(width>500) width = 500;
     return(
       <section>
         {/* <header>json!</header> */}
