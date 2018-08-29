@@ -4,9 +4,9 @@
 <img src="./preview.jpg" style="margin:0 auto;">
 ## 特征
 * 组件化的
-* .setState()方法更新UI
+* `.setState()`方法更新UI
 * 支持 gltf、obj、mtl、json、dae 模型格式 - 其他格式以后支持
-* 提供 `<DirectionLight/>` and `<AmbientLight/>` 组件 - 其他灯光组件以后提供
+* 提供 `<DirectionLight/>` 和 `<AmbientLight/>` 组件 - 其他灯光组件以后提供
 ---
 ## 使用
 从npm或cdn上获取react-3d-viewer
