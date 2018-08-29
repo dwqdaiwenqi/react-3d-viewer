@@ -38,8 +38,7 @@ render(){
         rotation={this.state.rotation}
         mtl="./src/lib/model/freedom.mtl"
         src="./src/lib/model/freedom.obj"
-      />
-    />
+     />
     </div>
   )
 }
@@ -55,12 +54,10 @@ componentDidMount(){
   })
 }
 ```
-参考这里面的Demo http://dwqdaiwenqi.github.io/react-3d-model/site/
+更多的[Demo](http://dwqdaiwenqi.github.io/react-3d-model/site/)
 
 ## 怎么运行的
-model-element脚本创建相机，场景，光源和WebGL渲染器。渲染器返回的DOM节点（<canvas>元素）将添加到文档中，并配置为填充视口并位于所有其他内容之上。此外，pointer-events: none设置，允许下面的元素进行交互。
-
-向<x-model>DOM 添加元素会导致模型被加载并添加到底层场景中。从DOM中删除元素将从场景中删除它。
+<FormatModel/>创建相机，场景，光源和WebGL渲染器。渲染器返回的DOM节点（<canvas>元素）将添加到文档中，并配置为填充视口并位于所有其他内容之上。此外，pointer-events: none设置，允许下面的元素进行交互。
 
 每帧都重新渲染场景。对于场景中的每个对象，渲染器找到它的主机节点并向上移动DOM树，解析任何变换，位置和滚动偏移。然后将得到的变换矩阵应用于场景中的对象。更新所有对象后，渲染器会将场景重新绘制到图层。对象现在出现在屏幕上，与其主机DOM节点同步。
 
