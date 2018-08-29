@@ -1,5 +1,5 @@
 ```js
-import {GLTFModel,AmbientLight,DirectionLight} from 'react-3d-model'
+import {GLTFModel,AmbientLight,DirectionLight} from 'react-3d-viewer'
 
 render(){
   return(

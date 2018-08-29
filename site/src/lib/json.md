@@ -1,5 +1,5 @@
 ```js
-import {JSONModel} from 'react-3d-model'
+import {JSONModel} from 'react-3d-viewer'
 
 render(){
   return(

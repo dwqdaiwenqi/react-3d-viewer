@@ -21,9 +21,20 @@ class App extends React.Component{
   render(){
    //  debugger
     return(
+      // <section>
+      //   <div style={{
+      //     width:'300px',height:'300px'
+      //     ,background:'linear-gradient(transparent, #9198e5)'
+      //     ,position:'absolute',left:'0',top:'0'
+      //     ,pointerEvents: 'none'
+      //   }}></div>
+      //   <span>xxxx4444444444</span>
+      // </section>
+
+
       <section className="example">
         <header className="example__title">
-          <a href="https://github.com/dwqdaiwenqi/react-3d-model/blob/master/README.md">React 3DModel </a>
+          <a href="https://github.com/dwqdaiwenqi/react-3d-model/blob/master/README.md">React 3D Viewer</a>
         </header>
         <div className="">
           <div className="example__nav-holder">
@@ -35,8 +46,7 @@ class App extends React.Component{
               <li><Link activeClassName="active-link" to="/DAE">DAE</Link></li>
             </ul>
           </div>
-         
-      
+               
           <div className="example__container" style={{position:'relative'}}>
             {
               this.props.children && React.cloneElement(this.props.children, {
@@ -66,7 +76,7 @@ class App extends React.Component{
             
           </div>
           <ScrollToTop showUnder={160}>
-            <span style={{fontSize:'22px',fontWeight:'bold',color:'#0ec5c5'}}>↑</span>
+            <span style={{fontSize:'36px',fontWeight:'bold',color:'#0ec5c5'}}>↑</span>
           </ScrollToTop>
         </div>
       </section>

@@ -1,19 +1,19 @@
 # react-3d-viewer
 A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-viewer/site/
-## 特征
-* 组件化风格创建
-* 支持gltf、obj、mtl、json、dae模型格式 - 未来支持更多
-* 数据驱动方式改变状态
-* 支持DirectionLigitn、AmbientLight组件- 未来支持更多
+## Features
+* Component-Based
+* Update UI using .setState() method
+* Support gltf,obj,mtl,json,dae model formats - other formats will be added in the future.
+* Provied DirectionLight and AmbientLight components - other components will be provided in the future.
 ---
-## 使用
-通过npm或者cdn获取
+## Usage
+Get react-3d-viewer through npm or cdn:
 ```js
 npm i react-3d-viewer
 ```
 * [https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js)
 
-基本使用
+Basic
 ```js
 import {OBJModel} from 'react-3d-viewer'
 
@@ -25,7 +25,7 @@ render(){
   )
 }
 ```
-更多的属性
+More parameters
 ```js
 import {Tick,MTLModel} from 'react-3d-viewer'
 
@@ -54,13 +54,11 @@ componentDidMount(){
   })
 }
 ```
-更多的[Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/)
+[Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/) is here. 
 
-## 怎么运行的
-<FormatModel/>创建相机，场景，光源和WebGL渲染器。渲染器返回的DOM节点（<canvas>元素）将添加到文档中，并配置为填充视口并位于所有其他内容之上。此外，pointer-events: none设置，允许下面的元素进行交互。
-
-每帧都重新渲染场景。对于场景中的每个对象，渲染器找到它的主机节点并向上移动DOM树，解析任何变换，位置和滚动偏移。然后将得到的变换矩阵应用于场景中的对象。更新所有对象后，渲染器会将场景重新绘制到图层。对象现在出现在屏幕上，与其主机DOM节点同步。
-
+## How it works
+The <FormatModel/> creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a <canvas> element) is added to the document and configured to fill the viewport.
+ 
 ## License
 
 MIT

@@ -1,5 +1,5 @@
 ```js
-import {Tick,MTLModel} from 'react-3d-model'
+import {Tick,MTLModel} from 'react-3d-viewer'
 
 render(){
   return(
