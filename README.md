@@ -75,21 +75,22 @@ componentDidMount(){
 更多Demo，[这儿](http://dwqdaiwenqi.github.io/react-3d-viewer/site/)
 
 ## 属性
-属性名 | 类型  | 默认值  |  描述
-:------|:------|:------|:------
-width | number  | 500  | 容器宽
-height | number  | 500  | 容器高
-onLoad | function | undefined | 函数加载完成后调用
-onProgress | function | undefined |  函数加载过程中调用
-enableKeys | boolen | true | 启用或不启用键盘控制
-enableRotate | boolen | true | 启用或不启用相机的水平和垂直方向旋转
-enableZoom | boolen | true | 启用或不启用相机的缩放
-enabled | boolen | true | 启用或不启用整个控制
-src | string | undefined | 文件的路径
-mtl | string | undefined | .mtl文件的路径
-anitialias | boolen | true | 是否启用抗锯齿
-position | object | {x:0,y:0,z:0} | 对象的坐标
-rotation | object | {x:0,y:0,z:0} | 对象的旋转
+| 属性名 | 类型  | 默认值  |  描述
+| :------|:------|:------|:------
+| width | number  | 500  | 容器宽
+| height | number  | 500  | 容器高
+| onLoad | function | undefined | 函数加载完成后调用
+| onProgress | function | undefined |  函数加载过程中调用
+| enableKeys | boolen | true | 启用或不启用键盘控制
+| enableRotate | boolen | true | 启用或不启用相机的水平和垂直方向旋转
+| enableZoom | boolen | true | 启用或不启用相机的缩放
+| enabled | boolen | true | 启用或不启用整个控制
+| src | string | undefined | 文件的路径
+| mtl | string | undefined | .mtl文件的路径
+| anitialias | boolen | true | 是否启用抗锯齿
+| position | object | {x:0,y:0,z:0} | 对象的坐标
+| rotation | object | {x:0,y:0,z:0} | 对象的旋转
+
 ## 如何工作的
 `<FormatModel>`组件创建了相机、场景、灯光和WebGL渲染器。它往文档中添加了一个填满了视口的DOM节点(`<canvas>`元素)。
 内部scene是实时渲染的，在componentDidUpdate中检测props，改变对象的属性。
