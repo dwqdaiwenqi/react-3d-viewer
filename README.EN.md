@@ -65,7 +65,7 @@ componentDidMount(){
   // It's not recommended to use this way.
   ReactDOM.render(
     React.createElement('div',{ style: { width: 600, margin: '0px auto' } },
-    React.createElement(React3DModel.JSONModel, {
+    React.createElement(React3DViewer.JSONModel, {
       src:'./src/lib/model/kapool.js'
     })
   )
