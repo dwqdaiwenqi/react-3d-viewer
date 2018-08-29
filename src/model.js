@@ -155,12 +155,6 @@ class Model extends React.Component{
 
   }
   get need_children_lights(){
-    //始终有一个环境光
-
-    //没有添加任何灯光，添加方向光
-    //either 替换为使用自定义灯光
-
-    //没有任何自定义灯光
 
     if(
       this.array_children.filter((o)=>{
@@ -175,9 +169,6 @@ class Model extends React.Component{
 
  
   componentDidUpdate(){
-    // return
-    // console.log('didupdate!',this.props)
-
     if(!this.obj3d) return false
 
     var {src,background,width,height} = this.props;
