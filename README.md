@@ -56,17 +56,6 @@ componentDidMount(){
 }
 ```
 [Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/) is here. 
-// width:500 number
-// ,height:500
-// ,antialias:true boolen
-// ,position: {x:0, y: 0, z: 0} object
-// ,rotation: {x:0, y: 0, z: 0}
-// ,enableKeys: true
-// ,enableRotate: true
-// ,enableZoom: true
-// ,enabled: true
-// ,src string
-// ,mtl string
 
 ## Properties
 Property        |       Type            |       Default         |       Description
