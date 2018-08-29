@@ -6,9 +6,9 @@
   "main": "dist/scripts/main1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "site": "webpack --w --mode development",
-    "dev": "webpack --w --mode development",
-    "pro": "webpack --w --mode production"
+    "site": "webpack --mode production",
+    "dev": "webpack --mode production",
+    "pro": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
