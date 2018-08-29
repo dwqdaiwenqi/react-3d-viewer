@@ -71,12 +71,19 @@ componentDidMount(){
 ## Properties
 Property        |       Type            |       Default         |       Description
 :-----------------------|:--------------|:--------------|:--------------------------------
-width | number  | 500  | width of container
-height | number  | 500  | width of container
-onClick | function  | undefined  | optional; do something when the user clicks a photo; receives arguments event and an object containing the index, photo obj originally sent and the next and previous photos in the gallery if they exist
-margin | number  | 2  | optional; number of margin pixels around each entire image
-direction | string | 'row' | optional; `column` or `row` based layout
-
+width | number  | 500  | The width of container
+height | number  | 500  | The height of container
+onLoad | function | undefined | A function to be called after the loading is successfully completed
+onProgress | function | undefined |  A function to be called while the loading is in progress
+enableKeys | boolen | true | Enable or disable the use of keyboard controls
+enableRotate | boolen | true | Enable or disable horizontal and vertical rotation of the camera
+enableZoom | boolen | true | Enable or disable zooming (dollying) of the camera
+enabled | boolen | true | Whether or not the controls are enabled
+src | string | undefined | The path of the file
+mtl | string | undefined | A string containing the pathof the .mtl file
+anitialias | boolen | true | Whether to perform antialiasing
+position | object | {x:0,y:0,z:0} | Object's position
+rotation | object | {x:0,y:0,z:0} | Object's rotation
 
 ## How it works
 The `<FormatModel>` creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a `<canvas>` element) is added to the document and configured to fill the viewport.
