@@ -1,3 +1,4 @@
+English| [简体中文](./README.CN.md)
 # react-3d-viewer
 A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-viewer/site/
 ## Features
