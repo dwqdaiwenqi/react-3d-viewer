@@ -1,20 +1,20 @@
-English| [简体中文](./README.CN.md)
+[English](./README.EN.md) | 简体中文
 # react-3d-viewer
-A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-viewer/site/
-## Features
-* Component-Based
-* Update UI using .setState() method
-* Support gltf,obj,mtl,json,dae model formats - other formats will be added in the future.
-* Provied DirectionLight and AmbientLight components - other components will be provided in the future.
+一个基于react.js的组件化3d模型查看工具. Demo请戳 http://dwqdaiwenqi.github.io/react-3d-viewer/site/
+## 特征
+* 组件化的
+* .setState()方法更新UI
+* 支持 gltf、obj、mtl、json、dae 模型格式 - 其他格式以后支持
+* 提供 `<DirectionLight/>` and `<AmbientLight/>` 组件 - 其他灯光组件以后提供
 ---
-## Usage
-Get react-3d-viewer through npm or cdn:
+## 使用
+从npm或cdn上获取react-3d-viewer
 ```js
 npm i react-3d-viewer
 ```
 * [https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js)
 
-Basic
+基本使用
 ```js
 import {OBJModel} from 'react-3d-viewer'
 
@@ -26,7 +26,7 @@ render(){
   )
 }
 ```
-More parameters
+
 ```js
 import {Tick,MTLModel} from 'react-3d-viewer'
 
@@ -55,33 +55,25 @@ componentDidMount(){
   })
 }
 ```
-[Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/) is here. 
+更多Demo，[这儿](http://dwqdaiwenqi.github.io/react-3d-viewer/site/)
 
-## Properties
-Property        |       Type            |       Default         |       Description
+## 属性
+属性名        |       类型            |       默认值         |       描述
 :-----------------------|:--------------|:--------------|:--------------------------------
-width | number  | 500  | The width of container
-height | number  | 500  | The height of container
-onLoad | function | undefined | A function to be called after the loading is successfully completed
-onProgress | function | undefined |  A function to be called while the loading is in progress
-enableKeys | boolen | true | Enable or disable the use of keyboard controls
-enableRotate | boolen | true | Enable or disable horizontal and vertical rotation of the camera
+width | number  | 500  | 容器宽
+height | number  | 500  | 容器高
+onLoad | function | undefined | 函数加载完成后调用
+onProgress | function | undefined |  函数加载过程中调用
+enableKeys | boolen | true | 启用或不启用键盘控制
+enableRotate | boolen | true | 启用或不启用相机的水平和垂直方向旋转
 enableZoom | boolen | true | Enable or disable zooming (dollying) of the camera
-enabled | boolen | true | Whether or not the controls are enabled
-src | string | undefined | The path of the file
-mtl | string | undefined | A string containing the path of the .mtl file
-anitialias | boolen | true | Whether to perform antialiasing
-position | object | {x:0,y:0,z:0} | Object's position
-rotation | object | {x:0,y:0,z:0} | Object's rotation
+enabled | boolen | true | 是否启用控制
+src | string | undefined | 文件的路径
+mtl | string | undefined | .mtl文件的路径
+anitialias | boolen | true | 是否启用抗锯齿
+position | object | {x:0,y:0,z:0} | 对象的坐标
+rotation | object | {x:0,y:0,z:0} | 对象的旋转
 
-## How it works
-The `<FormatModel>` creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a `<canvas>` element) is added to the document and configured to fill the viewport.
- 
 ## License
 
 MIT
-
-
-
-
-
