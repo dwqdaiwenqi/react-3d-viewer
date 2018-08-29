@@ -1,5 +1,6 @@
 [English](./README.EN.md) | 简体中文
 # react-3d-viewer [![](https://img.shields.io/npm/v/react-3d-viewer.svg)](https://www.npmjs.com/package/react-3d-viewer) 
+A 3D model viewer component based on react.js
 一个基于react.js的组件化3d模型查看工具. Demo请戳 http://dwqdaiwenqi.github.io/react-3d-viewer/site/
 ## 特征
 * 组件化的
