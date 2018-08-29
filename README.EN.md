@@ -93,7 +93,8 @@ rotation | object | {x:0,y:0,z:0} | Object's rotation
 
 ## How it works
 The `<FormatModel>` creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a `<canvas>` element) is added to the document and configured to fill the viewport.
- 
+Scene is rendered in real time. In the `componentDidUpdate` method, the changes of `props` are detected and the attributes of objects are changed.
+
 ## License
 
 MIT
