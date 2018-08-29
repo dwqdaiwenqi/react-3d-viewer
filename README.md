@@ -82,8 +82,8 @@ onLoad | function | undefined | 函数加载完成后调用
 onProgress | function | undefined |  函数加载过程中调用
 enableKeys | boolen | true | 启用或不启用键盘控制
 enableRotate | boolen | true | 启用或不启用相机的水平和垂直方向旋转
-enableZoom | boolen | true | Enable or disable zooming (dollying) of the camera
-enabled | boolen | true | 是否启用控制
+enableZoom | boolen | true | 启用或不启用相机的缩放
+enabled | boolen | true | 启用或不启用整个控制
 src | string | undefined | 文件的路径
 mtl | string | undefined | .mtl文件的路径
 anitialias | boolen | true | 是否启用抗锯齿

@@ -83,7 +83,7 @@ onLoad | function | undefined | A function to be called after the loading is suc
 onProgress | function | undefined |  A function to be called while the loading is in progress
 enableKeys | boolen | true | Enable or disable the use of keyboard controls
 enableRotate | boolen | true | Enable or disable horizontal and vertical rotation of the camera
-enableZoom | boolen | true | Enable or disable zooming (dollying) of the camera
+enableZoom | boolen | true | Enable or disable zooming of the camera
 enabled | boolen | true | Whether or not the controls are enabled
 src | string | undefined | The path of the file
 mtl | string | undefined | A string containing the path of the .mtl file
