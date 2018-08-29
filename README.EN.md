@@ -3,7 +3,7 @@ English| [简体中文](./README.md)
 A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-viewer/site/
 ## Features
 * Component-Based
-* Update UI using .setState() method
+* Update UI using `.setState()` method
 * Support gltf,obj,mtl,json,dae model formats - other formats will be added in the future.
 * Provied DirectionLight and AmbientLight components - other components will be provided in the future.
 ---
