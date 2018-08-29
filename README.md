@@ -89,6 +89,9 @@ mtl | string | undefined | .mtl文件的路径
 anitialias | boolen | true | 是否启用抗锯齿
 position | object | {x:0,y:0,z:0} | 对象的坐标
 rotation | object | {x:0,y:0,z:0} | 对象的旋转
+## 如何工作的
+`<FormatModel>`组件创建了相机、场景、灯光和WebGL渲染器。它往文档中添加了一个填满了视口的DOM节点(`<canvas>`元素)。
+内部scene是实时渲染的，在componentDidUpdate中检测props，改变对象的属性。
 
 ## License
 
