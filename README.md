@@ -1,5 +1,5 @@
 # react-3d-viewer
-A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-model/site/
+A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-viewer/site/
 ## 特征
 * 组件化风格创建
 * 支持gltf、obj、mtl、json、dae模型格式 - 未来支持更多
@@ -11,11 +11,11 @@ A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenq
 ```js
 npm i react-3d-model
 ```
-* [https://unpkg.com/react-3d-model@latest/dist/main.js](https://unpkg.com/react-3d-model@latest/dist/main.js)
+* [https://unpkg.com/react-3d-viewer@latest/dist/main.js](https://unpkg.com/react-3d-viewer@latest/dist/main.js)
 
 基本使用
 ```js
-import {OBJModel} from 'react-3d-model'
+import {OBJModel} from 'react-3d-viewer'
 
 render(){
   return(
@@ -27,7 +27,7 @@ render(){
 ```
 更多的属性
 ```js
-import {Tick,MTLModel} from 'react-3d-model'
+import {Tick,MTLModel} from 'react-3d-viewer'
 
 render(){
   return(
@@ -54,7 +54,7 @@ componentDidMount(){
   })
 }
 ```
-更多的[Demo](http://dwqdaiwenqi.github.io/react-3d-model/site/)
+更多的[Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/)
 
 ## 怎么运行的
 <FormatModel/>创建相机，场景，光源和WebGL渲染器。渲染器返回的DOM节点（<canvas>元素）将添加到文档中，并配置为填充视口并位于所有其他内容之上。此外，pointer-events: none设置，允许下面的元素进行交互。
