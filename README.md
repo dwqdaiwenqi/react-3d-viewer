@@ -9,9 +9,9 @@ A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenq
 ## 使用
 通过npm或者cdn获取
 ```js
-npm i react-3d-model
+npm i react-3d-viewer
 ```
-* [https://unpkg.com/react-3d-viewer@latest/dist/main.js](https://unpkg.com/react-3d-viewer@latest/dist/main.js)
+* [https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js)
 
 基本使用
 ```js

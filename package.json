@@ -1,8 +1,9 @@
 {
-  "name": "react-pamorama",
-  "version": "1.0.0",
-  "description": "",
-  "main": "postcss.config.js",
+  "name": "react-3d-viewer",
+  "version": "1.0.1",
+  "email": "2540546236@qq.com",
+  "description": "A 3D model viewer component based on react.js",
+  "main": "dist/scripts/main1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "site": "webpack --w --mode development",
