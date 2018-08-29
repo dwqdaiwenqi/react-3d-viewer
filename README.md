@@ -75,7 +75,7 @@ componentDidMount(){
 更多Demo，[这儿](http://dwqdaiwenqi.github.io/react-3d-viewer/site/)
 
 ## 属性
-属性名        |       类型            |       默认值         |       描述
+属性名 | 类型  | 默认值  |  描述
 :------|:------|:------|:------
 width | number  | 500  | 容器宽
 height | number  | 500  | 容器高
