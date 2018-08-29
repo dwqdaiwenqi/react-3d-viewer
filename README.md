@@ -57,7 +57,7 @@ componentDidMount(){
 [Demo](http://dwqdaiwenqi.github.io/react-3d-viewer/site/) is here. 
 
 ## How it works
-The <FormatModel/> creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a <canvas> element) is added to the document and configured to fill the viewport.
+The `<FormatModel>` creates a camera, scene, light source and a WebGL renderer.The DOM returned by the renderer (a `<canvas>` element) is added to the document and configured to fill the viewport.
  
 ## License
 
