@@ -14,7 +14,7 @@ npm i react-3d-viewer
 ```
 * [https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js)
 
-Basic
+### Work with module bundler
 ```js
 import {OBJModel} from 'react-3d-viewer'
 
@@ -51,8 +51,26 @@ componentDidMount(){
     var {rotation} = this.state
     rotation.y += 0.005
     this.setState({rotation})
+
   })
 }
+```
+### HTML
+```html
+<script src="https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js"></script>
+<script src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
+<div id="example"></div>
+<script >
+  // It's not recommended to use this way.
+  ReactDOM.render(
+    React.createElement('div',{ style: { width: 600, margin: '0px auto' } },
+    React.createElement(React3DModel.JSONModel, {
+      src:'./src/lib/model/kapool.js'
+    })
+  )
+  ,document.getElementById('example'));
+</script>
 ```
 To view a demo,click [here](http://dwqdaiwenqi.github.io/react-3d-viewer/site/). 
 

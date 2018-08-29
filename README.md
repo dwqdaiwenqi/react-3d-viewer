@@ -14,7 +14,7 @@ npm i react-3d-viewer
 ```
 * [https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js)
 
-基本使用
+### Commonjs
 ```js
 import {OBJModel} from 'react-3d-viewer'
 
@@ -55,6 +55,22 @@ componentDidMount(){
   })
 }
 ```
+### HTML
+```html
+<script src="https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js"></script>
+<script src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
+<div id="example"></div>
+<script >
+  // 别这么做。。。
+  ReactDOM.render(
+  React.createElement('div',{ style: { width: 600, margin: '0px auto' } },
+  React.createElement(React3DModel.JSONModel, {src:'./src/lib/model/kapool.js'})
+  )
+  ,document.getElementById('example'));
+</script>
+```
+
 更多Demo，[这儿](http://dwqdaiwenqi.github.io/react-3d-viewer/site/)
 
 ## 属性
