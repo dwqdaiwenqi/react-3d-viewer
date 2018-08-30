@@ -1,5 +1,5 @@
 ```js
-import {DAEModel} from 'react-3d-model'
+import {DAEModel} from 'react-3d-viewer'
 
 render(){
   return(
