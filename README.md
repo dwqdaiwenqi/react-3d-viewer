@@ -87,7 +87,7 @@ enableRotate | boolen | true | Enable or disable horizontal and vertical rotatio
 enableZoom | boolen | true | Enable or disable zooming of the camera
 enabled | boolen | true | Whether or not the controls are enabled
 src | string | undefined | The path of the file
-mtl | string | undefined | A string containing the path of the .mtl file
+mtl | string | undefined | The path of the .mtl file
 anitialias | boolen | true | Whether to perform antialiasing
 position | object | {x:0,y:0,z:0} | Object's position
 rotation | object | {x:0,y:0,z:0} | Object's rotation
