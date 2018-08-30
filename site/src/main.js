@@ -30,7 +30,6 @@ class App extends React.Component{
       //   <span>xxxx4444444444</span>
       // </section>
 
-
       <section className="example">
         <header className="example__title">
           <a href="https://github.com/dwqdaiwenqi/react-3d-model/blob/master/README.md">React 3D Viewer</a>
