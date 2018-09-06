@@ -3,7 +3,7 @@
   "version": "1.0.8",
   "email": "2540546236@qq.com",
   "description": "A 3D model viewer component based on react.js",
-  "main": "dist/scripts/main1.js",
+  "main": "dist/scripts/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "site": "webpack --mode production",

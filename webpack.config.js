@@ -9,7 +9,7 @@ module.exports = {
 
     output: ENV==='site' ? 
         { path: __dirname+'/site/dist/',filename:'scripts/[name].js' } :
-        { path: __dirname+'/dist/',filename: 'scripts/[name].js',library: 'React3DModel',libraryTarget: 'umd' },
+        { path: __dirname+'/dist/',filename: 'scripts/[name].js',library: 'React3DViewer',libraryTarget: 'umd' },
     module: {
         rules: [
             {    
