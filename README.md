@@ -1,6 +1,6 @@
 English| [简体中文](./README.CN.md)
 # react-3d-viewer [![](https://img.shields.io/npm/v/react-3d-viewer.svg)](https://www.npmjs.com/package/react-3d-viewer) 
-A 3D model viewer component based on react.js. Demo located at http://dwqdaiwenqi.github.io/react-3d-viewer/site/
+A 3D model viewer component based on react.js. Demo located at https://dwqdaiwenqi.github.io/react-3d-viewer/site/
 <img src="./preview.jpg" style="margin:0 auto;">
 ## Features
 * Component-Based
@@ -73,7 +73,7 @@ componentDidMount(){
   ,document.getElementById('example'));
 </script>
 ```
-To view a demo,click [here](http://dwqdaiwenqi.github.io/react-3d-viewer/site/). 
+To view a demo,click [here](https://dwqdaiwenqi.github.io/react-3d-viewer/site/). 
 
 ## Properties
 Property        |       Type            |       Default         |       Description
