@@ -6,7 +6,7 @@ A 3D model viewer component based on react.js. Demo located at https://dwqdaiwen
 * Component-Based
 * Update UI using `.setState()` method
 * Support gltf,obj,mtl,json,dae model formats - other formats will be added in the future.
-* Provied `<DirectionLight/>` and `<AmbientLight/>` components - other components will be provided in the future.
+* Provied `<DirectionLight/>` and `<AmbientLight/>` light components - other components will be provided in the future.
 ---
 ## Usage
 Get react-3d-viewer through npm or cdn:
