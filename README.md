@@ -58,6 +58,23 @@ componentDidMount(){
 ```
 
 ```js
+  import {Tick,DAEModel} from 'react-3d-viewer'
+
+  render(){
+    return(
+      <div>
+       <DAEModel 
+          src={'./src/lib/model/Ruins_dae.dae'}
+          onLoad={()=>{
+            // ...
+          }}
+        >
+          <DirectionLight color={0xff00ff}/>
+        </DAEModel>
+      </div>
+    )
+  }
+ 
 ```
 ### HTML
 ```html
