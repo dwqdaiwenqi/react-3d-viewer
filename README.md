@@ -56,6 +56,9 @@ componentDidMount(){
   })
 }
 ```
+
+```js
+```
 ### HTML
 ```html
 <script src="https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js"></script>
