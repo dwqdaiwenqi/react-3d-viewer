@@ -58,7 +58,7 @@ componentDidMount(){
 ```
 
 ```js
-import {Tick,DAEModel,DirectionLight } from 'react-3d-viewer'
+import {DAEModel,DirectionLight } from 'react-3d-viewer'
 
 render(){
   return(
