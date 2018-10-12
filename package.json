@@ -10,7 +10,7 @@
     "dev": "webpack --mode production",
     "pro": "webpack --mode production"
   },
-  "author": "Yohana",
+  "author": "Yohane",
   "license": "ISC",
   "dependencies": {
     "marked": "^0.5.0",
