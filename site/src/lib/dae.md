@@ -8,6 +8,7 @@ render(){
         src={'./src/lib/model/PikachuF_ColladaMax.dae'}
         width={width} height={width}
         scale={{x:.5,y:.5,z:.5}}
+        enableRotate={false}
         onLoad={()=>{
           this.props.onLoaded()
         }}

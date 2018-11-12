@@ -221,6 +221,7 @@ export class DAE extends Component{
             scale={{x:.5,y:.5,z:.5}}
             rotation={{x:-.3,y:.2,z:.2}}
             position={{x:0,y:-.3,z:0}}
+            enableRotate={false}
             onLoad={()=>{
               this.props.onLoaded()
             }}
