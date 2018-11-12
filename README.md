@@ -101,6 +101,7 @@ Property        |       Type            |       Default         |       Descript
 :-----------------------|:--------------|:--------------|:--------------------------------
 width | number  | 500  | The width of container
 height | number  | 500  | The height of container
+texPath | string | '' | Set the base path for the img file
 onLoad | function | undefined | A function to be called after the loading is successfully completed
 onProgress | function | undefined |  A function to be called while the loading is in progress
 enableKeys | boolen | true | Enable or disable the use of keyboard controls
