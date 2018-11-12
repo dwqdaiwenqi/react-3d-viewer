@@ -13,7 +13,7 @@ Get react-3d-viewer through npm or cdn:
 ```js
 npm i react-3d-viewer
 ```
-* [https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js)
+* [https://unpkg.com/react-3d-viewer@latest/dist/scripts/react-3d-viewer.js](https://unpkg.com/react-3d-viewer@latest/dist/scripts/react-3d-viewer.js)
 
 ### Work with module bundler
 ```js
