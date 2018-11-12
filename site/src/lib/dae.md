@@ -5,7 +5,7 @@ render(){
   return(
     <div>
       <DAEModel 
-        src={'./src/lib/model/PikachuF_ColladaMax.dae'}
+        src={'./src/lib/model/PikachuF_ColladaMax.DAE'}
         width={width} height={width}
         scale={{x:.5,y:.5,z:.5}}
         enableRotate={false}
