@@ -1,5 +1,5 @@
 /*!
- *  react-3d-viewer v1.0.8
+ *  react-3d-viewer v1.0.10
  *  By https://github.com/dwqdaiwenqi 
  *  Github: https://github.com/dwqdaiwenqi/react-3d-viewer
  *  MIT Licensed.
