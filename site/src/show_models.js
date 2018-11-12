@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Tick,JSONModel,OBJModel,MTLModel,GLTFModel,DAEModel,AmbientLight,DirectionLight} from '../../dist/scripts/main.js'
+import {Tick,JSONModel,OBJModel,MTLModel,GLTFModel,DAEModel,AmbientLight,DirectionLight} from '../../dist/scripts/react-3d-viewer.js'
 import marked from 'marked'
 import './show_model.less'
 
@@ -38,6 +38,7 @@ export class JSON_ extends Component{
         <div className="model-container">
           <JSONModel
             src="./src/lib/model/kapool.js"
+            texPath=""
             width={width} height={width}
             onLoad={()=>{
               this.props.onLoaded()
@@ -117,6 +118,7 @@ export class MTL extends Component{
             width={width} height={width}
             mtl="./src/lib/model/freedom.mtl"
             src="./src/lib/model/freedom.obj"
+            texPath="./src/lib/model/"
             onProgress={(xhr)=>{
               //console.log('objmtl',xhr)
             }}
@@ -214,8 +216,11 @@ export class DAE extends Component{
       <section>
         <div className="model-container">
           <DAEModel 
-            src={'./src/lib/model/Ruins_dae.dae'}
+            src={'./src/lib/model/PikachuF_ColladaMax.dae'}
             width={width} height={width}
+            scale={{x:.5,y:.5,z:.5}}
+            rotation={{x:-.3,y:.2,z:.2}}
+            position={{x:0,y:-.3,z:0}}
             onLoad={()=>{
               this.props.onLoaded()
             }}

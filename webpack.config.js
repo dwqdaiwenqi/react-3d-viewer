@@ -9,7 +9,7 @@ module.exports = {
 
     output: ENV==='site' ? 
         { path: __dirname+'/site/dist/',filename:'scripts/[name].js' } :
-        { path: __dirname+'/dist/',filename: 'scripts/[name].js',library: 'React3DViewer',libraryTarget: 'umd' },
+        { path: __dirname+'/dist/',filename: 'scripts/react-3d-viewer.js',library: 'React3DViewer',libraryTarget: 'umd' },
     module: {
         rules: [
             {    
@@ -22,18 +22,18 @@ module.exports = {
                 }   
             },
             {
-							test: /\.(css|less)$/,
-							use: [
+                test: /\.(css|less)$/,
+                use: [
 
-							'style-loader',
-							'css-loader',
-							{
-									loader: 'postcss-loader',
-									options: {
-									plugins: ()=>[require('autoprefixer')]
-									}},  
-							'less-loader'
-							]
+                'style-loader',
+                'css-loader',
+                {
+                        loader: 'postcss-loader',
+                        options: {
+                        plugins: ()=>[require('autoprefixer')]
+                        }},  
+                'less-loader'
+                ]
             }
     
              , {
@@ -55,7 +55,12 @@ module.exports = {
               }
         ]
     },
+    externals: {
+        'react': 'React',
+        'react-dom':'ReactDOM'
+    },
     plugins: [
+        new webpack.BannerPlugin(" react-3d-viewer v"+require('./package.json').version+"\r\n By https://github.com/dwqdaiwenqi \r\n Github: https://github.com/dwqdaiwenqi/react-3d-viewer\r\n MIT Licensed."),
     ]
 
 }

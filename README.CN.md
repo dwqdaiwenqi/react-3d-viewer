@@ -78,9 +78,9 @@ render(){
 ```
 ### HTML
 ```html
-<script src="https://unpkg.com/react-3d-viewer@latest/dist/scripts/main.js"></script>
-<script src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/react-3d-viewer@latest/dist/scripts/react-3d-viewer.js"></script>
+<script src="https://unpkg.com/react@16.4.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min.js"></script>
 <div id="example"></div>
 <script >
   // 别这么做。。。

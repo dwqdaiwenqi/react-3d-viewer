@@ -13,16 +13,19 @@ class ObjMtlModel extends Model{
     // console.log(props)
   }
   load3dModel(){
-    var {src,mtl} = this.props;
+    var {src,mtl,texPath} = this.props;
  
     if(!src || !mtl) return false
 
-    new THREE.MTLLoader()
-    .load(mtl, materials => {
+    var mtl_loader =  new THREE.MTLLoader()
+    var obj_loader = new THREE.OBJLoader()
+
+    mtl_loader.setTexturePath(texPath)
+    
+    mtl_loader.load(mtl, materials => {
       materials.preload();
 
-      new THREE.OBJLoader()
-      .setMaterials( materials )
+      obj_loader.setMaterials( materials )
       .load(src, obj3d =>{
         var bound_box = this.computeBoundingBox(obj3d);
         // debugger

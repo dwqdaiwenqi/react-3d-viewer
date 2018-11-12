@@ -16,13 +16,15 @@ class ColladaModel extends Model{
   load3dModel(){
 
     // debugger
-    var {src} = this.props;
+    var {src,texPath} = this.props;
  
     if(!src) return false
 
     // model
     // debugger
-    new THREE.ColladaLoader().load(src, data => {
+    var collada_loader = new THREE.ColladaLoader()
+
+    collada_loader.load(src, data => {
 
         this.obj3d = data.scene;
       // Add the objects to the scene 

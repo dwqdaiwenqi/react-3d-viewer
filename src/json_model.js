@@ -15,10 +15,11 @@ class JSONModel extends Model{
 
   }
   load3dModel(){
-    var {src,onProgress,onLoad} = this.props;
+    var {src,onProgress,onLoad,texPath} = this.props;
 
-    let loader = new THREE.JSONLoader();
-    loader.load(this.props.src,(geometry,materials)=>{
+    let loader = new THREE.JSONLoader()
+    loader.setTexturePath(texPath)
+    loader.load(src,(geometry,materials)=>{
 
       var obj3d =  new THREE.Mesh(geometry,materials);
       geometry.computeBoundingBox();

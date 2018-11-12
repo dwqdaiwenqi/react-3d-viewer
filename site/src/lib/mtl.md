@@ -5,11 +5,12 @@ render(){
   return(
     <div>
      <MTLModel 
-        enableZoom = {false}
-        position={{x:0,y:-100,z:0}}
-        rotation={this.state.rotation}
-        mtl="./src/lib/model/freedom.mtl"
-        src="./src/lib/model/freedom.obj"
+      enableZoom = {false}
+      position={{x:0,y:-100,z:0}}
+      rotation={this.state.rotation}
+      mtl="./src/lib/model/freedom.mtl"
+      src="./src/lib/model/freedom.obj"
+      texPath="./src/lib/model/"
       />
     />
     </div>

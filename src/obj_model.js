@@ -13,15 +13,15 @@ class ObjModel extends Model{
   })
   constructor(props){
     super(props)
-    // console.log(props)
   }
   load3dModel(){
-    var {src} = this.props;
+    var {src,texPath} = this.props;
  
     if(!src) return false
     // instantiate a loader
     // load a resource
-    new THREE.OBJLoader().load(
+    var obj_loader = new THREE.OBJLoader()
+    obj_loader.load(
       // resource URL
       src,
       // called when resource is loaded
@@ -34,7 +34,6 @@ class ObjModel extends Model{
         //debugger
 
         var cz = bound_box.max.z - bound_box.min.z;
-      
 
         this.camera.position.set(0, 0, front.z+cz*1.5);
 

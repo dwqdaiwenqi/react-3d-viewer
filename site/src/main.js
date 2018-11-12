@@ -18,30 +18,23 @@ class App extends React.Component{
     }
   }
   render(){
-   //  debugger
-    return(
-      // <section>
-      //   <div style={{
-      //     width:'300px',height:'300px'
-      //     ,background:'linear-gradient(transparent, #9198e5)'
-      //     ,position:'absolute',left:'0',top:'0'
-      //     ,pointerEvents: 'none'
-      //   }}></div>
-      //   <span>xxxx4444444444</span>
-      // </section>
 
+    return(
       <section className="example">
+        <a href="//github.com/dwqdaiwenqi/react-3d-viewer" target="_blank" style={{position:'fixed',right:0,top:0,zIndex:3}} >
+          <img src="//alloyteam.github.io/github.png" alt=""/>
+        </a>
         <header className="example__title">
           <a href="https://github.com/dwqdaiwenqi/react-3d-model/blob/master/README.md">React 3D Viewer</a>
         </header>
         <div className="">
           <div className="example__nav-holder">
             <ul className="example__nav">
+              <li><Link activeClassName="active-link" to="/DAE">DAE</Link></li>
               <li><Link activeClassName="active-link" to="/JSON">JSON</Link></li>
               <li><Link activeClassName="active-link" to="/OBJ">OBJ</Link></li>
               <li><Link activeClassName="active-link" to="/MTL">MTL</Link></li>
               <li><Link activeClassName="active-link" to="/GLTF">GLTF</Link></li>
-              <li><Link activeClassName="active-link" to="/DAE">DAE</Link></li>
             </ul>
           </div>
                
@@ -94,7 +87,7 @@ class App extends React.Component{
 render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={JSON_} />
+      <IndexRoute component={DAE} />
       <Route path="/JSON" component={JSON_}/>
       <Route path="/OBJ" component={OBJ}/>
       <Route path="/MTL" component={MTL}/>

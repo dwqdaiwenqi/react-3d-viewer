@@ -16,8 +16,8 @@ class GltfModel extends Model{
   load3dModel(){
 
     // debugger
-    var {src} = this.props;
- 
+    var {src,texPath} = this.props;
+    
     if(!src) return false
 
     // model

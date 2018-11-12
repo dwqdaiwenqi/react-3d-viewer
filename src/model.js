@@ -102,6 +102,8 @@ class Model extends React.Component{
     ,height:500
     ,antialias:true
     ,loader: ''
+    ,baseUrl:''
+    ,texPath:''
     ,position: {x:0, y: 0, z: 0}
     ,scale: {x:1, y:1, z: 1}
     ,rotation: {x:0, y: 0, z: 0}
@@ -256,6 +258,7 @@ class Model extends React.Component{
       new THREE.Vector3(position.x, position.y, position.z) 
     )
     this.group.rotation.set(rotation.x,rotation.y,rotation.z)
+    this.group.scale.set(scale.x,scale.y,scale.z)
 
 
     this.load3dModel();
@@ -278,6 +281,8 @@ class Model extends React.Component{
         )
 
         this.group.rotation.set(rotation.x,rotation.y,rotation.z)
+
+        this.group.scale.set(scale.x,scale.y,scale.z)
       }
 
     })
