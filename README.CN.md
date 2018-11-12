@@ -22,7 +22,7 @@ import {OBJModel} from 'react-3d-viewer'
 render(){
   return(
     <div>
-      <OBJModel src="./a.obj"/>
+      <OBJModel src="./a.obj" texPath=""/>
     </div>
   )
 }
@@ -38,6 +38,7 @@ render(){
         enableZoom = {false}
         position={{x:0,y:-100,z:0}}
         rotation={this.state.rotation}
+        texPath="./src/lib/model/"
         mtl="./src/lib/model/freedom.mtl"
         src="./src/lib/model/freedom.obj"
      />
@@ -99,6 +100,7 @@ render(){
 | :------|:------|:------|:------ |
 | width | number  | 500  | 容器宽 |
 | height | number  | 500  | 容器高 |
+| texPath | string | '' | 设置图片的路径
 | onLoad | function | undefined | 函数加载完成后调用 
 | onProgress | function | undefined |  函数加载过程中调用 |
 | enableKeys | boolen | true | 启用或不启用键盘控制 |
