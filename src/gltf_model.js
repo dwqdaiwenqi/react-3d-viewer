@@ -15,7 +15,6 @@ class GltfModel extends Model{
   }
   load3dModel(){
 
-    // debugger
     var {src,texPath} = this.props;
     
     if(!src) return false
@@ -55,7 +54,7 @@ class GltfModel extends Model{
         this.camera.position.copy( 
           this.camera.position.clone().add(new THREE.Vector3(0,0,.01))
         )
-        // debugger
+
       }else {
         // Find a good camera position based on the size of the scene
         
