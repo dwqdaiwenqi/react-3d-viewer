@@ -11,8 +11,6 @@ class JSONModel extends Model{
   })
   constructor(props){
     super(props)
-    // console.log(props)
-
   }
   load3dModel(){
     var {src,onProgress,onLoad,texPath} = this.props;
