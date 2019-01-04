@@ -55,10 +55,6 @@ module.exports = {
               }
         ]
     },
-    externals: {
-        'react': 'React',
-        'react-dom':'ReactDOM'
-    },
     plugins: [
         new webpack.BannerPlugin(" react-3d-viewer v"+require('./package.json').version+"\r\n By https://github.com/dwqdaiwenqi \r\n Github: https://github.com/dwqdaiwenqi/react-3d-viewer\r\n MIT Licensed."),
     ]
