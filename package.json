@@ -1,6 +1,6 @@
 {
   "name": "react-3d-viewer",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "email": "2540546236@qq.com",
   "description": "A 3D model viewer component based on react.js",
   "main": "dist/scripts/react-3d-viewer.js",
