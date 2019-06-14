@@ -6,7 +6,7 @@
 * 组件化的
 * `.setState()`方法更新UI
 * 支持 gltf、obj、mtl、json、dae 模型格式 - 其他格式以后支持
-* 提供 `<DirectionLight/>` 和 `<AmbientLight/>` 灯光组件 - 其他灯光组件以后提供
+* 提供 `<DirectionLight/>` 和 `<AmbientLight/>` 灯光组件 - 其他灯光组件以后提供  
 ---
 ## 使用
 从npm或cdn上获取react-3d-viewer
