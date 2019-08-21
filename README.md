@@ -3,7 +3,7 @@ English| [简体中文](./README.CN.md)
 A 3D model viewer component based on react.js. Demo located at https://dwqdaiwenqi.github.io/react-3d-viewer/site/
 
 <img src="./preview2.jpg" style="margin:0 auto; width:699px;">
-
+       
 ## Features
 * Component-Based
 * Update UI using `.setState()` method
