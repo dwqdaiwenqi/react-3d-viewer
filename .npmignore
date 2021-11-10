@@ -3,3 +3,8 @@ node_modules
 .DS_Store
 npm-debug.log
 site
+gulpfile.js
+preview.jpg
+preview2.jpg
+webpack.config.js
+.babelrc

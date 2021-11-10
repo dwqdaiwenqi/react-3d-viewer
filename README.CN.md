@@ -109,9 +109,11 @@ render(){
 | enabled | boolen | true | 启用或不启用整个控制 |
 | src | string | undefined | 文件的路径 |
 | mtl | string | undefined | .mtl文件的路径 |
-| anitialias | boolen | true | 是否启用抗锯齿 |
+| background | string | rgb(255,255,255) | 背景颜色 |
 | position | object | {x:0,y:0,z:0} | 对象的坐标 |
 | rotation | object | {x:0,y:0,z:0} | 对象的旋转 |
+| cameraOptions | object | {fov:45,aspect:width/height,near:.1,far:8888} | 摄像机参数 |
+| rendererOptions | object | {alpha:true,antialias:true} | renderer参数 |
 
 
 ## 如何工作的

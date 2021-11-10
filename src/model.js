@@ -100,7 +100,6 @@ class Model extends React.Component{
   static defaultProps = {
     width:500
     ,height:500
-    ,antialias:true
     ,loader: ''
     ,baseUrl:''
     ,texPath:''
@@ -113,6 +112,8 @@ class Model extends React.Component{
     ,enableRotate: true
     ,enableZoom: true
     ,enabled: true
+    ,cameraOptions: {fov:45,aspect:500/500,near:.1,far:8888}
+    ,rendererOptions: {alpha:true,antialias:true}
   }
 
   constructor(props){
@@ -173,7 +174,7 @@ class Model extends React.Component{
   componentDidUpdate(){
     if(!this.obj3d) return false
 
-    var {src,background,width,height} = this.props;
+    var {src,width,height} = this.props;
   
     // console.log(this.props.position);
 
@@ -232,14 +233,14 @@ class Model extends React.Component{
     // debugger
     // return
 
-    var {width,height,antialias,background} = this.props;
+    var {width,height,rendererOptions,cameraOptions,background} = this.props;
 
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(45,width/height,.1,8888);
-    this.renderer = new THREE.WebGLRenderer({antialias});
+    this.camera = new THREE.PerspectiveCamera(cameraOptions.fov,cameraOptions.aspect||(width/height),cameraOptions.near,cameraOptions.far);
+    this.renderer = new THREE.WebGLRenderer(rendererOptions);
 
     //console.log(background);
-    this.renderer.setClearColor(new THREE.Color(background));
+    this.renderer.setClearColor(new THREE.Color(background),rendererOptions.alpha||0);
     this.renderer.setSize(width,height);
 
     this.$container.appendChild(this.renderer.domElement);

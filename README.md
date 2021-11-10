@@ -112,9 +112,11 @@ enableZoom | boolen | true | Enable or disable zooming of the camera
 enabled | boolen | true | Whether or not the controls are enabled
 src | string | undefined | The path of the file
 mtl | string | undefined | The path of the .mtl file
-anitialias | boolen | true | Whether to perform antialiasing
+background | string | rgb(255,255,255) | background color
 position | object | {x:0,y:0,z:0} | Object's position
 rotation | object | {x:0,y:0,z:0} | Object's rotation
+cameraOptions | object | {fov:45,aspect:width/height,near:.1,far:8888} | camera options
+rendererOptions | object | {alpha:true,antialias:true} | renderer options
 
 ## License
 
